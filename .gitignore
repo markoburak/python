@@ -102,7 +102,11 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+<<<<<<< HEAD
 queuestack
+=======
+queue
+>>>>>>> 3eeae20a1f70de9bcf44f8248bf2c536a75034b6
 .env
 .venv
 env/
