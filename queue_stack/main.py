@@ -1,8 +1,25 @@
 def main():
-    from queue import Queue
-    from stack import Stack
+    import queue
+    from myqueue import MyQueue
+    from mystack import MyStack
 
-    arr1 = Stack()
+    # built function
+    q = queue.Queue(maxsize=20)
+    q.put(1)
+    q.put(2)
+    q.put(3)
+
+    print(q.get())
+
+    s = queue.LifoQueue(maxsize=10)
+    s.put(1)
+    s.put(2)
+    s.put(3)
+
+    print(s.get())
+
+    # my own func
+    arr1 = MyStack()
 
     arr1.add(1)
     arr1.add(2)
@@ -16,7 +33,7 @@ def main():
 
     arr1.get()
 
-    arr2 = Queue()
+    arr2 = MyQueue()
 
     arr2.add(1)
     arr2.add(2)

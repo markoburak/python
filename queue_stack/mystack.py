@@ -1,4 +1,4 @@
-class Stack(object):
+class MyStack(object):
 
     def __init__(self):
         self.arr = []
